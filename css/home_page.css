@@ -1,0 +1,62 @@
+body {
+  font-size: 100%;
+  background-color: powderblue;
+  margin: 0 auto;
+}
+
+h1 {
+  font-size: 4em;
+  color: blue;
+  padding: 10px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+p {
+  font-size: 2.5em;
+  color: blue;
+  text-align: center;
+}
+
+header {
+  /* border: 2px solid white; */
+  margin: 0 auto;
+}
+
+nav {
+  border: 2px solid black;
+  margin: 0 auto;
+  width: 98%;
+}
+ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: linen;
+}
+li { float: left; }
+
+li a {
+  font-size: 1.5em;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+li a:hover {
+  background-color: blue;
+  color: linen;
+}
+
+
+#home_page_image_container {
+  font-size: 2.5em;
+  width: 60vw;
+  height: 55vh;
+  margin: 0 auto;
+  background-color: linen;
+  border: 2px solid white;
+}
