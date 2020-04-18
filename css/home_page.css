@@ -2,8 +2,9 @@ body {
   font-size: 100%;
   background-color: powderblue;
   margin: 0 auto;
+  font-family: Verdana, Helvetica, sans-serif;
 }
-
+/* Fonts---------------------------------------------------- */
 h1 {
   font-size: 4em;
   color: blue;
@@ -11,18 +12,37 @@ h1 {
   text-align: center;
   margin: 0 auto;
 }
-
 p {
   font-size: 2.5em;
   color: blue;
   text-align: center;
 }
+section h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 5px 0px 0px 5px;
+  padding: 2px;
+}
+section p {
+  font-size: 1.5em;
+  color: black;
+  margin: 5px 0px 0px 5px;
+  padding: 2px;
+  text-align: left;
+}
+section pre {
+  margin: 0px;
+  padding: 0px;
+}
+code { font-size: 1.5em; }
+
+/* --------------------------------------------------------------- */
 
 header {
   /* border: 2px solid white; */
   margin: 0 auto;
 }
-
+/* The navigation bar--------------------------------------------- */
 nav {
   border: 2px solid black;
   margin: 0 auto;
@@ -49,14 +69,48 @@ li a {
 li a:hover {
   background-color: blue;
   color: linen;
+  cursor: pointer;
 }
-
+/* ---------------------------------------------------------------- */
 
 #home_page_image_container {
-  font-size: 2.5em;
+  font-size: 1.5em;
   width: 60vw;
   height: 55vh;
   margin: 0 auto;
   background-color: linen;
   border: 2px solid white;
 }
+/* Code examples container----------------------------------------- */
+
+#content_container {
+  /* font-size: 1.5em; */
+  width: 85%;
+  margin: 0 auto 10px;
+  border-radius: 5px;
+  background-color: linen;
+  border: 2px solid white;
+}
+
+#content_container:hover {
+  border: 2px solid black;
+}
+
+.answer_button {
+  position: relative;
+  left: 33.3%;
+  width: 33.3%;
+  border-radius: 5px;
+  margin-bottom: 10px;
+  font-size: 1.5em;
+  color: blue;
+  background-color: powderblue;
+}
+
+.answer_button:hover {
+  background-color: blue;
+  color: linen;
+  cursor: pointer;
+}
+
+/* --------------------------------------------------------------- */
