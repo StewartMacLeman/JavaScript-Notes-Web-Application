@@ -113,4 +113,20 @@ li a:hover {
   cursor: pointer;
 }
 
-/* --------------------------------------------------------------- */
+/* Go to the top of the page button.------------------------------------------ */
+.pageTop {
+   display: none;
+   position: fixed;
+   bottom: 20px;
+   right: 20px;
+   z-index: 99;
+   font-size: 1.5em;
+   color: blue;
+   background-color: linen;
+ }
+
+ .pageTop:hover {
+   background-color: blue;
+   color: linen;
+   cursor: pointer;
+ }
