@@ -46,9 +46,225 @@
         <pre><code>
           let c = 50;
           let d = 60;
-          [c, d].forEach(alert);
+          [c, d, "bananas"].forEach(alert);
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_2">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Another Variable Declaration Example</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let name = "Stewart";
+          let language = "JavaScript";
+          let emotion = "Joy!";
+          alert(name + " is studying " + language + " , which brings him " + emotion);
+
+          name = "John";
+          alert(name + " is studying " + language + " , which brings him " + emotion);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_3">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Another Variable Declaration Example 2</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let x, y, z;
+          x = y = z = 30 * 30;
+          alert(x);
+          alert(y);
+          alert(z);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Another Variable Declaration Example 3</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let p = 1;
+          let q = 2;
+          let r = 3 - (p = q + 1);
+          alert(p);
+          alert(r);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>typeof Operator Example</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let age = 50;
+          let name = "Jimmy";
+          alert(name + ` is only ${age - 9} years old`); // First alert.
+
+          alert(typeof age); // Second alert.
+          age = String(age);
+          alert(typeof age); // Third alert.
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_6">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Examples of Number Opertors</h2>
+        <p>Check the code examples below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          alert( 8 % 3 );
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_7">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert( 3 ** 3 );
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_8">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert( 2 ** (1/3));
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_9">Click Me!</button>
+        <hr>
+        <pre><code>
+          let number_1 = 1;
+          let number_2 = ++number_1;
+          alert(number_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_10">Click Me!</button>
+        <hr>
+        <pre><code>
+          let number_3 = 1;
+          let number_4 = number_3++;
+          alert(number_4);
+          alert(number_3);
+          alert(number_4);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_11">Click Me!</button>
+        <hr>
+        <pre><code>
+          let zoom = 3;
+          zoom += 3;
+          alert(`zoom is equal to ${zoom}`);
+
+          zoom *= 3;
+          alert(`zoom is equal to ${zoom}`);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_12">Click Me!</button>
+        <hr>
+        <pre><code>
+          let boom = ( 1 + 3 , 3 * 3 , 4**2 );
+
+          alert(`boom is equal to ${boom}`);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_13">Click Me!</button>
+        <hr>
+      </section>
+
+      <section class="content_container">
+        <h2>Examples of Number Opertors</h2>
+        <p>Check the code examples below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          alert(2 >= "2");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_14">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert(2 == "2");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_15">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert(2 === "2");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_16">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert(2 != 3);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_17">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert(2 != 2);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_18">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert(2 != "2");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_19">Click Me!</button>
+        <hr>
+        <pre><code>
+          alert(2 !== "2");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_20">Click Me!</button>
+        <hr>
+      </section>
+
+      <section class="content_container">
+        <h2>Browser Interactions (alert, prompt and confirm)</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let message = "Hi there, hope you're well!";
+          alert(message);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_21">Click Me!</button>
+        <hr>
+        <pre><code>
+          let favouriteColour = prompt("What is your favourite colour?", "orange");
+
+          alert(`Your favourite colour is ${favouriteColour} `);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_22">Click Me!</button>
+        <hr>
+        <pre><code>
+          confirm("Do you wish to continue?");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_23">Click Me!</button>
+        <hr>
+      </section>
+
+      <section class="content_container">
+        <h2>if else Statements</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          function ifElseEx1() {
+
+            let codeExperience =
+            prompt("How many years have you been coding for?", "Nevermind!");
+
+            if (codeExperience >= 2) {
+              alert(`${codeExperience} years, that's impressive!`);
+            } else if (codeExperience < 2){
+              alert(`I see, good stuff!`);
+            } else if (codeExperience == "Nevermind!"){
+              alert(`Please excuse me!`);
+            } else {
+              alert(`Sorry, I don't understand! Please use the number keys.`);
+              ifElseEx1();
+            }
+          };
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_24">Click Me!</button>
+        <hr>
+        <pre><code>
+          let age = prompt("How old are you?");
+
+          if ( age >= 18 ){
+            alert("Please come in and enjoy your night!");
+          } else {
+            alert("Sorry, not tonight!");
+          };
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_25">Click Me!</button>
+        <hr>
+        <p>An alternative method to the above!</p>
+        <pre><code>
+          let age = prompt("How old are you?");
+
+          (age >=18) ? alert("Please come in!") : alert("Sorry, not tonight!");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_26">Click Me!</button>
+        <hr>
       </section>
 
       <section class="content_container">
