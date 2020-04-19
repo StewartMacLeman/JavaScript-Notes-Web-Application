@@ -83,7 +83,7 @@ li a:hover {
 }
 /* Code examples container----------------------------------------- */
 
-#content_container {
+.content_container {
   /* font-size: 1.5em; */
   width: 85%;
   margin: 0 auto 10px;
@@ -92,7 +92,7 @@ li a:hover {
   border: 2px solid white;
 }
 
-#content_container:hover {
+.content_container:hover {
   border: 2px solid black;
 }
 
