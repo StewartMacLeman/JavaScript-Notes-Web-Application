@@ -58,6 +58,7 @@
           let name = "Stewart";
           let language = "JavaScript";
           let emotion = "Joy!";
+
           alert(name + " is studying " + language + " , which brings him " + emotion);
 
           name = "John";
@@ -157,11 +158,10 @@
           alert(`boom is equal to ${boom}`);
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_13">Click Me!</button>
-        <hr>
       </section>
 
       <section class="content_container">
-        <h2>Examples of Number Opertors</h2>
+        <h2>Examples of Comparison Opertors</h2>
         <p>Check the code examples below and click the buttons to see the outcomes.</p>
         <pre><code>
           alert(2 >= "2");
@@ -197,7 +197,6 @@
           alert(2 !== "2");
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_20">Click Me!</button>
-        <hr>
       </section>
 
       <section class="content_container">
@@ -220,7 +219,6 @@
           confirm("Do you wish to continue?");
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_23">Click Me!</button>
-        <hr>
       </section>
 
       <section class="content_container">
@@ -257,7 +255,7 @@
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_25">Click Me!</button>
         <hr>
-        <p>An alternative method to the above!</p>
+        <p>An alternative method to the above, using the Ternary Operator!</p>
         <pre><code>
           let age = prompt("How old are you?");
 
@@ -265,17 +263,149 @@
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_26">Click Me!</button>
         <hr>
+        <pre><code>
+          let nameOfJavaScript =
+          prompt("What is the official name of JavaScript", "Don't know!");
+
+          if ((nameOfJavaScript == "ECMAScript") || (nameOfJavaScript == "ecmascript")){
+            alert("Right!");
+          } else {
+            alert("The answer is ECMAScript");
+          }
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_27">Click Me!</button>
+        <hr>
+        <pre><code>
+          let message;
+          let login = prompt("Are you an Employee or a Director", "Employee")
+
+          if (login == null){
+            login = 'cancel';
+          }
+
+          let lowerLogin = login.toLowerCase();
+
+          if (lowerLogin == 'employee') {
+            message = 'Hello there!';
+          } else if (lowerLogin == 'director') {
+            message = 'Greetings Boss!';
+          } else if (lowerLogin == '') {
+            message = 'No login, please try again.';
+          } else if (lowerLogin == 'cancel'){
+            message = 'You have cancelled!';
+          } else {
+            message = 'Not sure about that, please try again.';
+          }
+          alert(message);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_28">Click Me!</button>
+        <hr>
+        <p>An alternative method to the above, using Ternary Operators!</p>
+        <pre><code>
+          let message;
+          let login = prompt("Are you an Employee or a Director", "Employee")
+
+          if (login == null){
+            login = 'cancel';
+          }
+          let lowerLogin = login.toLowerCase();
+
+          lowerLogin == "employee" ? message = "Hello there!" :
+          lowerLogin == "director" ? message = "Greetings Boss!" :
+          lowerLogin == "" ? message = "No login!" :
+          lowerLogin == "cancel" ? message = "Cancelled!": message = "Please re-enter";
+          alert(message);
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_29">Click Me!</button>
       </section>
 
       <section class="content_container">
-        <h2>Sub Header Text</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <h2>while, do while and for statement Examples</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
         <pre><code>
-          Area for code.
+          let books = 25;
 
-
+          while (books <= 29){
+            alert( "I have room for more books!");
+            ++books;
+          }
+          alert("I've no more space for books!");
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_#">Click Me!</button>
+        <button type="button" class="answer_button" id="basic_btn_30">Click Me!</button>
+        <hr>
+        <pre><code>
+          let books = 25;
+
+          do {
+          ++books;
+            alert("I still have space for more books");
+          } while ( books < 29);
+
+          alert("Now I don't!");
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_31">Click Me!</button>
+        <hr>
+        <pre><code>
+          for (let albums = 40; albums < 43; ++albums ){
+            alert("Please buy me more albums!")
+          }
+          alert("That's enough, many thanks!")
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_32">Click Me!</button>
+        <hr>
+        <pre><code>
+          for (let num = 0; num <10; ++num){
+            if (num%2 != 0) continue;
+            alert(num);
+          }
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_33">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Switch Statement Examples</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let switchNumber =
+          +prompt("Please type in one of the following: 10, 20, 30, 40.", "");
+
+          switch (switchNumber) {
+            case 10 : alert("You typed in the number 10!");
+            break;
+            case 20 : alert("You typed in the number 20!");
+            break;
+            case 30 : alert("You typed in the number 30!");
+            break;
+            case 40 : alert("You typed in the number 40!");
+            break;
+            default: alert("You have not typed in any of the options.")
+          }
+        </code></pre>
+        <p>The <b>+</b> operator <mark>(<code>+prompt("Pl...")</code>)</mark> is required to ensure the correct datatype is entered. Switch statements use strict equality (===)!</p></br>
+        <button type="button" class="answer_button" id="basic_btn_34">Click Me!</button>
+        <hr>
+        <pre><code>
+          let switchGroup =
+          prompt("Choose the correct colour of bananas: red, blue, purple or yellow", "");
+
+          switch (switchGroup){
+            case "yellow":
+            alert("Bingo, you're correct!");
+            break;
+            case null:
+            alert("You've cancelled!")
+            break;
+
+            case "red":
+            case "blue":
+            case "purple":
+            alert("Nope!");
+            break;
+
+            default : alert("Try that one again!")
+          }
+        </code></pre>
+        <button type="button" class="answer_button" id="basic_btn_35">Click Me!</button>
       </section>
 
 <!-- To the top of the page button. -->

@@ -217,8 +217,143 @@ function ifElseEx2() {
 document.querySelector("#basic_btn_26").addEventListener("click", ifElseEx3);
 function ifElseEx3() {
   let age = prompt("How old are you?");
-
   (age >=18) ? alert("Please come in!") : alert("Sorry, not tonight!");
+};
 
+document.querySelector("#basic_btn_27").addEventListener("click", ifElseEx4);
+function ifElseEx4() {
+  let nameOfJavaScript =
+  prompt("What is the official name of JavaScript", "Don't know!");
+
+  if ((nameOfJavaScript == "ECMAScript") || (nameOfJavaScript == "ecmascript")){
+    alert("Right!");
+  } else {
+    alert("The answer is ECMAScript");
+  }
+};
+
+document.querySelector("#basic_btn_28").addEventListener("click", ifElseEx5);
+function ifElseEx5() {
+  let message;
+  let login = prompt("Are you an Employee or a Director", "Employee")
+
+  if (login == null){
+    login = 'cancel';
+  }
+  let lowerLogin = login.toLowerCase();
+
+  if (lowerLogin == 'employee') {
+    message = 'Hello there!';
+  } else if (lowerLogin == 'director') {
+    message = 'Greetings Boss!';
+  } else if (lowerLogin == '') {
+    message = 'No login, please try again.';
+  } else if (lowerLogin == 'cancel'){
+    message = 'You have cancelled!';
+  } else {
+    message = 'Not sure about that, please try again.';
+  }
+  alert(message);
+};
+
+document.querySelector("#basic_btn_29").addEventListener("click", ifElseEx6);
+function ifElseEx6() {
+  let message;
+  let login = prompt("Are you an Employee or a Director", "Employee")
+
+  if (login == null){
+    login = 'cancel';
+  }
+  let lowerLogin = login.toLowerCase();
+
+  lowerLogin == "employee" ? message = "Hello there!" :
+  lowerLogin == "director" ? message = "Greetings Boss!" :
+  lowerLogin == "" ? message = "No login!" :
+  lowerLogin == "cancel" ? message = "Cancelled!": message = "Please re-enter";
+  alert(message);
+};
+// -----------------------------------------------------------------------------
+
+// Examples of while, do while and for statements.
+
+document.querySelector("#basic_btn_30").addEventListener("click", whileEx1);
+function whileEx1() {
+  let books = 25;
+
+  while (books <= 29){
+    alert( "I have room for more books!");
+    ++books;
+  }
+  alert("I've no more space for books!");
+};
+
+document.querySelector("#basic_btn_31").addEventListener("click", doWhileEx1);
+function doWhileEx1() {
+  let books = 25;
+  do {
+  ++books;
+    alert("I still have space for more books");
+  } while ( books < 29);
+  alert("Now I don't!");
+};
+
+document.querySelector("#basic_btn_32").addEventListener("click", forEx1);
+function forEx1() {
+  for (let albums = 40; albums < 43; ++albums ){
+    alert("Please buy me more albums!")
+  }
+  alert("That's enough, many thanks!")
+};
+
+document.querySelector("#basic_btn_33").addEventListener("click", forEx2);
+function forEx2() {
+  for (let num = 0; num <10; ++num){
+    if (num%2 != 0) continue;
+    alert(num);
+  }
+};
+// -----------------------------------------------------------------------------
+
+// Examples switch statements.
+
+document.querySelector("#basic_btn_34").addEventListener("click", switchEx1);
+function switchEx1() {
+  let switchNumber =
+  +prompt("Please type in one of the following: 10, 20, 30, 40.", "");
+
+  switch (switchNumber) {
+    case 10 : alert("You typed in the number 10!");
+    break;
+    case 20 : alert("You typed in the number 20!");
+    break;
+    case 30 : alert("You typed in the number 30!");
+    break;
+    case 40 : alert("You typed in the number 40!");
+    break;
+    default: alert("You have not typed in any of the options.")
+  }
+};
+
+document.querySelector("#basic_btn_35").addEventListener("click", switchEx2);
+function switchEx2() {
+  let switchGroup =
+  prompt("Choose the correct colour of bananas: red, blue, purple or yellow", "");
+
+  switch (switchGroup){
+    case "yellow":
+    alert("Bingo, you're correct!");
+    break;
+    case null:
+    alert("You've cancelled!")
+    break;
+
+    case "red":
+    case "blue":
+    case "purple":
+    alert("Nope!");
+    break;
+
+    default : alert("Try that one again!")
+  }
 };
 // -----------------------------------------------------------------------------
