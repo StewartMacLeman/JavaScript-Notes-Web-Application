@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stewart MacLeman">
+    <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision by the author.">
+
+    <link rel="stylesheet" href="../css/home_page.css">
+    <script src="../scripts/functions.js" defer></script>
+    <script src="../scripts/toTheTop.js" defer></script>
+    <title>JavaScript Notes: Functions</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>JavaScript Notes: Functions</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home Page</a></li>
+        <li><a href="basics.html">The Basics</a></li>
+        <li><a href="string_methods.html">String Methods</a></li>
+        <li><a href="array_methods.html">Array Methods</a></li>
+        <li><a href="#">Functions</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <p>This page is for the functions..</p>
+
+      <section class="content_container">
+        <h2>Function Example 1</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          function greeting(name, age){
+
+            alert("Hello, my name is: " + name + ". I'm " + age + " years old!");
+          };
+
+          greeting("Tommy", "30");
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_1">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 2</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          function localVariable(){
+            let name = "PJ";
+            alert("My name is " + name + "!");
+          };
+
+          localVariable();
+          alert(name);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_2">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 3</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let outerName = "MJ";
+
+          function outerNameTest(){
+            let outerName = "MMJJ";
+            alert("My name is " + outerName);
+          };
+
+          outerNameTest();
+          alert(outerName);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_3">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 4</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let parameterName = "JimBob";
+
+          function parameterNameTest( parameterName, age = 100 ){
+            alert("I'm " + parameterName + ", I'm " + age + "!");
+          };
+
+          parameterNameTest(parameterName, 20);
+          parameterNameTest(parameterName);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 5</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let dow, ray, mee;
+
+          function calcDow(ray = 10, mee = 10){
+            dow = ray + mee;
+            return dow;
+          };
+
+          calcDow(20,30);
+          alert(dow);
+          calcDow();
+          alert(dow);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 6</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          function showMin(a , b){
+            if (a > b){
+              alert("a is greater than b!");
+            }
+            else if (a < b){
+              alert("b is greater than a");
+            }
+            else if (a == b){
+              alert("the values are the same");
+            }
+          };
+
+          showMin(10, 5); // The first alert!
+          showMin(5, 10); // The second alert!
+          showMin(5, 5); // The third alert!
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_6">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 7</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          function calcThePower(baseNumber, exponentNumber){
+
+            baseNumber = +prompt("Please add your base number", "");
+            exponentNumber = +prompt("Please add your exponent", "");
+            let value = baseNumber ** exponentNumber;
+            alert(value);
+            return value;
+          };
+
+          calcThePower();
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_7">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 8</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let funcExpression = function(){
+            alert("Hello world!");
+          }
+          alert(funcExpression);
+          funcExpression();
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_8">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 9</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let sum = (a,b) => a + b;
+          alert(sum(1,1));
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_9">Click Me!</button>
+      </section>
+
+<!-- To the top of the page button. -->
+      <button type="button" class="pageTop" title="Back to the top of the page.">Up</button>
+
+    </main>
+
+  </body>
+</html>
