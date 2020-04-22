@@ -31,36 +31,155 @@
       <p>This page is for the string methods..</p>
 
       <section class="content_container">
-        <h2>Variable Declaration Example</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <h2>String Method Example 1</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
-          let c = 50;
-          let d = 60;
-          alert( c + d );
+          let name = "Bobby";
+
+          alert(name);
+          alert(name[1]);
+          alert(name[name.length-1]);
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_1">Click Me!</button>
+        <button type="button" class="answer_button" id="string_btn_1">Click Me!</button>
       </section>
 
       <section class="content_container">
-        <h2>Sub Header Text</h2>
+        <h2>String Method Example 2</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
-          Area for code.
+          let name = "Bobby";
 
-
+          alert(name.length);
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_#">Click Me!</button>
+        <button type="button" class="answer_button" id="string_btn_2">Click Me!</button>
       </section>
 
       <section class="content_container">
-        <h2>Sub Header Text</h2>
+        <h2>String Method Example 3</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "Bobby";
+
+          alert(name.indexOf('y'));
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_3">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 4</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "Bobby";
+
+          alert(name.indexOf('z'));
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 5</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "Bobby";
+
+          alert(name.slice(0,1)); // alert 1.
+          alert(name.slice(0,2)); // alert 2.
+          alert(name.slice(0,3)); // alert 3.
+          alert(name.slice(0,4)); // alert 4.
+          alert(name.slice(0,5)); // alert 5.
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 6</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "Bobby";
+
+          alert(name.slice(0)); // alert 1.
+          alert(name.slice(1)); // alert 2.
+          alert(name.slice(2)); // alert 3.
+          alert(name.slice(3)); // alert 4.
+          alert(name.slice(4)); // alert 5.
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_6">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 7</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "Billy Bob";
+
+          alert(name.slice(1,2)); // alert 1.
+          alert(name.slice(1,3)); // alert 2.
+          alert(name.slice(2,7)); // alert 3.
+          alert(name.slice(-1));  // alert 4.
+          alert(name.slice(3,-1));// alert 5.
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_7">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 8</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
-          Area for code.
+          let name = "Bobby";
 
-
+          alert(name.toLowerCase());
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_#">Click Me!</button>
+        <button type="button" class="answer_button" id="string_btn_8">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 9</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let name = "Bobby";
+
+          alert(name.toUpperCase());
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_9">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 10</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "bobby";
+
+          alert(name[0].toUpperCase());
+          alert(name[0].toUpperCase() + name.slice(1, name.length-1));
+          alert(name[0].toUpperCase() + name.slice(1, name.length));
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_10">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 11</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "bobby";
+
+          alert(name.replace( 'obb' , 'udd'));
+          alert(name);
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_11">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 12</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let name = "bobby";
+
+          name = name.replace( 'obb' , 'udd');
+          
+          alert(name);
+          alert(name);
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_12">Click Me!</button>
       </section>
 
 <!-- To the top of the page button. -->
