@@ -6,7 +6,7 @@ document.querySelector("#function_btn_1").addEventListener("click", functionEx1)
 
 function functionEx1() {
   function greeting(name, age){
-    alert("Hello, my name is: " + name + ". I'm " + age + " years old!");
+    alert("Hello, my name is " + name + ". I'm " + age + " years old!");
   };
   greeting("Tommy", "30");
 };
@@ -68,6 +68,7 @@ function functionEx5() {
     dow = ray + mee;
     return dow;
   };
+  alert(dow);
   calcDow(20,30);
   alert(dow);
   calcDow();
@@ -81,7 +82,7 @@ document.querySelector("#function_btn_6").addEventListener("click", functionEx6)
 
 function functionEx6() {
 
-  function showMin(a , b){
+  function compareValue(a , b){
     if (a > b){
       alert("a is greater than b!");
     }
@@ -92,9 +93,9 @@ function functionEx6() {
       alert("the values are the same");
     }
   };
-  showMin(10, 5);
-  showMin(5, 10);
-  showMin(5, 5);
+  compareValue(10, 5);
+  compareValue(5, 10);
+  compareValue(5, 5);
 };
 // // -----------------------------------------------------------------------------
 //
@@ -137,5 +138,33 @@ document.querySelector("#function_btn_9").addEventListener("click", functionEx9)
 function functionEx9() {
   let sum = (a,b) => a + b;
   alert(sum(1,1));
+};
+// -----------------------------------------------------------------------------
+//
+// // Function Example 10.
+//
+document.querySelector("#function_btn_10").addEventListener("click", functionEx10);
+
+function functionEx10() {
+  let greetings = () => {
+    return alert("Hi there!");
+  };
+
+  greetings();
+};
+// -----------------------------------------------------------------------------
+//
+// // Function Example 11.
+//
+document.querySelector("#function_btn_11").addEventListener("click", functionEx11);
+
+function functionEx11() {
+  let moreGreetings = (name) => {
+    let salutation = "Hello ";
+    let end = "!";
+    return alert(salutation + name + end);
+  };
+
+ moreGreetings("Bobby");
 };
 // -----------------------------------------------------------------------------

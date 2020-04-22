@@ -36,7 +36,7 @@
         <pre><code>
           function greeting(name, age){
 
-            alert("Hello, my name is: " + name + ". I'm " + age + " years old!");
+            alert("Hello, my name is " + name + ". I'm " + age + " years old!");
           };
 
           greeting("Tommy", "30");
@@ -46,7 +46,7 @@
 
       <section class="content_container">
         <h2>Function Example 2</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           function localVariable(){
             let name = "PJ";
@@ -61,7 +61,7 @@
 
       <section class="content_container">
         <h2>Function Example 3</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let outerName = "MJ";
 
@@ -78,7 +78,7 @@
 
       <section class="content_container">
         <h2>Function Example 4</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let parameterName = "JimBob";
 
@@ -94,7 +94,7 @@
 
       <section class="content_container">
         <h2>Function Example 5</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let dow, ray, mee;
 
@@ -103,6 +103,7 @@
             return dow;
           };
 
+          alert(dow);
           calcDow(20,30);
           alert(dow);
           calcDow();
@@ -113,9 +114,9 @@
 
       <section class="content_container">
         <h2>Function Example 6</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
-          function showMin(a , b){
+          function compareValue(a , b){
             if (a > b){
               alert("a is greater than b!");
             }
@@ -127,9 +128,9 @@
             }
           };
 
-          showMin(10, 5); // The first alert!
-          showMin(5, 10); // The second alert!
-          showMin(5, 5); // The third alert!
+          compareValue(10, 5); // The first alert!
+          compareValue(5, 10); // The second alert!
+          compareValue(5, 5);  // The third alert!
         </code></pre>
         <button type="button" class="answer_button" id="function_btn_6">Click Me!</button>
       </section>
@@ -142,6 +143,7 @@
 
             baseNumber = +prompt("Please add your base number", "");
             exponentNumber = +prompt("Please add your exponent", "");
+
             let value = baseNumber ** exponentNumber;
             alert(value);
             return value;
@@ -154,7 +156,7 @@
 
       <section class="content_container">
         <h2>Function Example 8</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let funcExpression = function(){
             alert("Hello world!");
@@ -173,6 +175,34 @@
           alert(sum(1,1));
         </code></pre>
         <button type="button" class="answer_button" id="function_btn_9">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 10</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let greetings = () => {
+            return alert("Hi there!");
+          };
+
+          greetings();
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_10">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 11</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let moreGreetings = (name) => {
+            let salutation = "Hello ";
+            let end = "!";
+            return alert(salutation + name + end);
+          };
+
+         moreGreetings("Bobby");
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_11">Click Me!</button>
       </section>
 
 <!-- To the top of the page button. -->
