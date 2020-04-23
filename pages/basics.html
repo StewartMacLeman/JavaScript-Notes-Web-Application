@@ -74,6 +74,7 @@
         <pre><code>
           let x, y, z;
           x = y = z = 30 * 30;
+
           alert(x);
           alert(y);
           alert(z);
@@ -88,6 +89,7 @@
           let p = 1;
           let q = 2;
           let r = 3 - (p = q + 1);
+
           alert(p);
           alert(r);
         </code></pre>
@@ -100,6 +102,7 @@
         <pre><code>
           let age = 50;
           let name = "Jimmy";
+
           alert(name + ` is only ${age - 9} years old`); // First alert.
 
           alert(typeof age); // Second alert.
@@ -130,6 +133,7 @@
         <pre><code>
           let number_1 = 1;
           let number_2 = ++number_1;
+
           alert(number_2);
         </code></pre>
         <button type="button" class="answer_button" id="basic_btn_10">Click Me!</button>
@@ -137,6 +141,7 @@
         <pre><code>
           let number_3 = 1;
           let number_4 = number_3++;
+
           alert(number_4);
           alert(number_3);
           alert(number_4);
@@ -233,10 +238,12 @@
 
             if (codeExperience >= 2) {
               alert(`${codeExperience} years, that's impressive!`);
-            } else if (codeExperience < 2){
+            } else if ((codeExperience > 0) && (codeExperience < 2)){
               alert(`I see, good stuff!`);
             } else if (codeExperience == "Nevermind!"){
               alert(`Please excuse me!`);
+            } else if ((codeExperience == 0) || (codeExperience == null)){
+              alert(`Thanks anyway!`);
             } else {
               alert(`Sorry, I don't understand! Please use the number keys.`);
               ifElseEx1();
@@ -368,7 +375,7 @@
         <p>Check the code below and click the buttons to see the outcomes.</p>
         <pre><code>
           let switchNumber =
-          +prompt("Please type in one of the following: 10, 20, 30, 40.", "");
+          +prompt("Please type in one of the following: 10, 20, 30 or 40.", "");
 
           switch (switchNumber) {
             case 10 : alert("You typed in the number 10!");

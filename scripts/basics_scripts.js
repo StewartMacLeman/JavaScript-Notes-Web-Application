@@ -193,10 +193,12 @@ function ifElseEx1() {
 
   if (codeExperience >= 2) {
     alert(`${codeExperience} years, that's impressive!`);
-  } else if (codeExperience < 2){
+  } else if ((codeExperience > 0) && (codeExperience < 2)){
     alert(`I see, good stuff!`);
   } else if (codeExperience == "Nevermind!"){
     alert(`Please excuse me!`);
+  } else if ((codeExperience == 0) || (codeExperience == null)){
+    alert(`Thanks anyway!`);
   } else {
     alert(`Sorry, I don't understand! Please use the number keys.`);
     ifElseEx1();
@@ -291,7 +293,7 @@ document.querySelector("#basic_btn_31").addEventListener("click", doWhileEx1);
 function doWhileEx1() {
   let books = 25;
   do {
-  ++books;
+    ++books;
     alert("I still have space for more books");
   } while ( books < 29);
   alert("Now I don't!");
@@ -299,7 +301,7 @@ function doWhileEx1() {
 
 document.querySelector("#basic_btn_32").addEventListener("click", forEx1);
 function forEx1() {
-  for (let albums = 40; albums < 43; ++albums ){
+  for (let albums = 40; albums < 43; ++albums){
     alert("Please buy me more albums!")
   }
   alert("That's enough, many thanks!")
@@ -319,7 +321,7 @@ function forEx2() {
 document.querySelector("#basic_btn_34").addEventListener("click", switchEx1);
 function switchEx1() {
   let switchNumber =
-  +prompt("Please type in one of the following: 10, 20, 30, 40.", "");
+  +prompt("Please type in one of the following: 10, 20, 30 or 40.", "");
 
   switch (switchNumber) {
     case 10 : alert("You typed in the number 10!");

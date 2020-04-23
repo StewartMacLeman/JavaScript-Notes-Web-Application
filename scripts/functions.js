@@ -54,6 +54,7 @@ function functionEx4() {
 
   parameterNameTest(parameterName, 20);
   parameterNameTest(parameterName);
+  parameterNameTest("Billy Bob", 30);
 };
 // // -----------------------------------------------------------------------------
 //
@@ -90,7 +91,7 @@ function functionEx6() {
       alert("b is greater than a");
     }
     else if (a == b){
-      alert("the values are the same");
+      alert("The values are the same!");
     }
   };
   compareValue(10, 5);

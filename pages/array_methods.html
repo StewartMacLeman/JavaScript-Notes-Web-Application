@@ -31,37 +31,135 @@
       <p>This page is for the array methods..</p>
 
       <section class="content_container">
-        <h2>Variable Declaration Example</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <h2>Array Method Example 1</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
-          let c = 50;
-          let d = 60;
-          alert( c + d );
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
+
+          alert(shoppingList[0]);
+          alert(shoppingList[2]);
+          alert(shoppingList[shoppingList.length-1]);
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_1">Click Me!</button>
+        <button type="button" class="answer_button" id="array_btn_1">Click Me!</button>
       </section>
 
       <section class="content_container">
-        <h2>Sub Header Text</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <h2>Array Method Example 2</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
-          Area for code.
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
 
+          alert(shoppingList[1]);
+          shoppingList[1] = 'wine';
 
+          alert(shoppingList[1]);
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_#">Click Me!</button>
+        <button type="button" class="answer_button" id="array_btn_2">Click Me!</button>
       </section>
 
       <section class="content_container">
-        <h2>Sub Header Text</h2>
-        <p>Check the code below and click the button to see the outcome.</p>
+        <h2>Array Method Example 3</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
-          Area for code.
+          let anotherList = ['cereal', 'peas', 'beans', ['butter', 'milk', 'yogurt']]
 
-
+          alert(anotherList[2]);
+          alert(anotherList[3][0]);
+          alert(anotherList[3][2]);
         </code></pre>
-        <button type="button" class="answer_button" id="basic_btn_#">Click Me!</button>
+        <button type="button" class="answer_button" id="array_btn_3">Click Me!</button>
       </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 4</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
+          alert(shoppingList);
+
+          shoppingList.push('apples');
+          alert(shoppingList);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 5</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
+          alert(shoppingList);
+
+          shoppingList.pop();
+          alert(shoppingList);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 6</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
+          alert(shoppingList);
+
+          shoppingList.unshift('apples');
+          alert(shoppingList);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_6">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 7</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
+          alert(shoppingList);
+
+          shoppingList.shift();
+          alert(shoppingList);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_7">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 8</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let shoppingList = ['beer', 'cider', 'bread', 'jam', 'biscuits'];
+          alert(shoppingList);
+
+          let newString = shoppingList.toString();
+          alert(newString);
+
+          let anotherString = shoppingList.join(' + ');
+          alert(anotherString);
+
+          let yetAnotherString = shoppingList.join(''); // Without a space!
+          alert(yetAnotherString);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_8">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 9</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let randomString = 'Bobby,Sam,David,Mary,June';
+
+          let stringToArray = randomString.split(',');
+          
+          alert(typeof randomString);
+          alert(typeof stringToArray);
+          alert(stringToArray[1]);
+
+          for(let i=0; i < stringToArray.length; i++){
+            alert(stringToArray[i].toUpperCase());
+          }
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_9">Click Me!</button>
+      </section>
+
 
 <!-- To the top of the page button. -->
       <button type="button" class="pageTop" title="Back to the top of the page.">Up</button>
