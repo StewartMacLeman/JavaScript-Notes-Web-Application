@@ -12,7 +12,7 @@ function stringMethodEx1() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 2.
+// String Method Example 2: length
 
 document.querySelector("#string_btn_2").addEventListener("click", stringMethodEx2);
 
@@ -22,7 +22,7 @@ function stringMethodEx2() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 3.
+// String Method Example 3: indexOf()
 
 document.querySelector("#string_btn_3").addEventListener("click", stringMethodEx3);
 
@@ -32,7 +32,7 @@ function stringMethodEx3() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 4.
+// String Method Example 4: indexOf()
 
 document.querySelector("#string_btn_4").addEventListener("click", stringMethodEx4);
 
@@ -42,7 +42,7 @@ function stringMethodEx4() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 5.
+// String Method Example 5: slice()
 
 document.querySelector("#string_btn_5").addEventListener("click", stringMethodEx5);
 
@@ -56,7 +56,7 @@ function stringMethodEx5() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 6.
+// String Method Example 6: slice()
 
 document.querySelector("#string_btn_6").addEventListener("click", stringMethodEx6);
 
@@ -70,7 +70,7 @@ function stringMethodEx6() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 7.
+// String Method Example 7: slice()
 
 document.querySelector("#string_btn_7").addEventListener("click", stringMethodEx7);
 
@@ -84,7 +84,7 @@ function stringMethodEx7() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 8.
+// String Method Example 8: toLowerCase()
 
 document.querySelector("#string_btn_8").addEventListener("click", stringMethodEx8);
 
@@ -94,7 +94,7 @@ function stringMethodEx8() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 9.
+// String Method Example 9: toUpperCase()
 
 document.querySelector("#string_btn_9").addEventListener("click", stringMethodEx9);
 
@@ -104,7 +104,7 @@ function stringMethodEx9() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 10.
+// String Method Example 10: slice() and toUpperCase()
 
 document.querySelector("#string_btn_10").addEventListener("click", stringMethodEx10);
 
@@ -116,7 +116,7 @@ function stringMethodEx10() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 11.
+// String Method Example 11: replace()
 
 document.querySelector("#string_btn_11").addEventListener("click", stringMethodEx11);
 
@@ -128,7 +128,7 @@ function stringMethodEx11() {
 };
 // -----------------------------------------------------------------------------
 
-// String Method Example 12.
+// String Method Example 12: replace()
 
 document.querySelector("#string_btn_12").addEventListener("click", stringMethodEx12);
 
@@ -138,5 +138,52 @@ function stringMethodEx12() {
   name = name.replace( 'obb' , 'udd');
   alert(name);
   alert(name + " - The original has been changed!");
+};
+// -----------------------------------------------------------------------------
+
+// String Method Example 13: concat()
+
+document.querySelector("#string_btn_13").addEventListener("click", stringMethodEx13);
+
+function stringMethodEx13() {
+  let firstName = "Bob";
+  let secondName = "Jones";
+  let fullName = firstName.concat(secondName);
+  alert("Alert 1: " + fullName);
+
+  let space = " ";
+  fullName = firstName.concat(space).concat(secondName);
+  alert("Alert 2: " + fullName);
+};
+// -----------------------------------------------------------------------------
+
+// String Method Example 14: repeat()
+
+document.querySelector("#string_btn_14").addEventListener("click", stringMethodEx14);
+
+function stringMethodEx14() {
+  let greeting = "Hello there! ";
+  alert(greeting.repeat(3));
+
+  let manyGreetings =
+  parseInt(prompt("Have many greetings would you like to make?", "1"));
+
+  alert(greeting.repeat(manyGreetings));
+};
+// -----------------------------------------------------------------------------
+
+// String Method Example 15: match()
+
+document.querySelector("#string_btn_15").addEventListener("click", stringMethodEx15);
+
+function stringMethodEx15() {
+  let sentence = "There are lots and lots and lots of them!";
+
+  let containsLots1 = sentence.match(/lots/);
+  alert("Alert 1: " + Array.isArray(containsLots1));
+  alert("Alert 2: " + containsLots1);
+
+  let containsLots2 = sentence.match(/lots/g);
+  alert("Alert 3: " + containsLots2);
 };
 // -----------------------------------------------------------------------------

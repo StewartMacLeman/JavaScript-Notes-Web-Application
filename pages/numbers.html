@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Stewart MacLeman">
+    <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision.">
+
+    <link rel="stylesheet" href="../css/home_page.css">
+    <script src="../scripts/numbers.js" defer></script>
+    <script src="../scripts/toTheTop.js" defer></script>
+    <title>JavaScript Notes: Numbers</title>
+  </head>
+
+  <body>
+    <header>
+      <h1>JavaScript Notes: Numbers</h1>
+    </header>
+    <nav>
+      <ul>
+        <li><a href="../index.html">Home Page</a></li>
+        <li><a href="basics.html">The Basics</a></li>
+        <li><a href="string_methods.html">Strings</a></li>
+        <li><a href="#">Numbers</a></li>
+        <li><a href="array_methods.html">Arrays</a></li>
+        <li><a href="objects.html">Objects</a></li>
+        <li><a href="dates.html">Dates</a></li>
+        <li><a href="functions.html">Functions</a></li>
+        <li><a href="events.html">Events</a></li>
+      </ul>
+    </nav>
+
+    <main>
+      <p>This page is for number methods...</p>
+
+      <section class="content_container">
+        <h2>Numbers Example 1: Exponents</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let exponentOne = 1e3;
+          alert(exponentOne);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_1">Click Me!</button>
+        <hr>
+        <pre><code>
+          let exponentTwo = 1e6;
+          alert(exponentTwo);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_2">Click Me!</button>
+        <hr>
+        <pre><code>
+          let exponentThree = 1e-3;
+          alert(exponentThree);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_3">Click Me!</button>
+        <hr>
+        <pre><code>
+          let exponentFour = 1e-6;
+          alert(exponentFour);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 2: parseInt()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let stringNumber = "1000";
+          alert(typeof stringNumber);
+
+          let aNum = parseInt(stringNumber);
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 3: parseFloat()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let stringNumber = "20.20";
+          alert(typeof stringNumber);
+
+          let aNum = parseFloat(stringNumber);
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_6">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 4: Number()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let stringNumber = "12345";
+          alert(typeof stringNumber);
+
+          let aNum = Number(stringNumber);
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_7">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aNum = Number("56789");
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_8">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aNum = Number(true);
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_9">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aNum = Number(false);
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_10">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aNum = Number(null);
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_11">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aNum = Number(" ");
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_12">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aNum = Number("number");
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_13">Click Me!</button>
+        <hr>
+        <pre><code>
+          let aDate = Number(new Date());
+          alert("The value of aDate is " + aDate + " , which is a: " + typeof aDate);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_14">Click Me!</button>
+        <hr>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 5: The + Operator</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let stringNumber = "12345";
+          alert(typeof stringNumber);
+
+          let aNum = +stringNumber;
+          alert("The value of aNum is " + aNum + " , which is a: " + typeof aNum);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_15">Click Me!</button>
+        <hr>
+        <pre><code>
+          let favNumber_1 = prompt("What is your favourite number?");
+          alert(typeof favNumber_1);
+
+          let favNumber_2 = +prompt("What is your favourite number?");
+
+          alert("The value of favNumber_2 is " + favNumber_2 +
+          " , which is a: " + typeof favNumber_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_16">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 6: toString()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let myNumber = 12345;
+          alert(typeof myNumber);
+
+          let  myString = myNumber.toString();
+
+          alert("The value of myString is " + myString +
+          " , which is a: " + typeof myString);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_17">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 7: Math.max()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let maxNumber = Math.max(1, 20, 40, 100);
+
+          alert(maxNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_18">Click Me!</button>
+        <hr>
+        <pre><code>
+          let bunchOfNumbers = [1, 20, 40, 100];
+
+          let maxNumber = Math.max(bunchOfNumbers);
+
+          alert(maxNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_19">Click Me!</button>
+        <hr>
+        <pre><code>
+          let bunchOfNumbers = [1, 20, 40, 100];
+
+          let maxNumber = Math.max(...bunchOfNumbers); //Using the spread operator!
+
+          alert(maxNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_20">Click Me!</button>
+        <hr>
+        <pre><code>
+          let bunchOfNumbers = [1, 20, 40, 100];
+
+          let maxNumber = bunchOfNumbers.reduce(function(a, b){
+            return Math.max(a, b);
+          })
+
+          alert(maxNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_21">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 8: Math.min()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let minNumber = Math.min(1, 20, 40, 100);
+
+          alert(minNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_22">Click Me!</button>
+        <hr>
+        <pre><code>
+          let bunchOfNumbers = [1, 20, 40, 100];
+
+          let minNumber = Math.min(bunchOfNumbers);
+
+          alert(minNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_23">Click Me!</button>
+        <hr>
+        <pre><code>
+          let bunchOfNumbers = [1, 20, 40, 100];
+
+          let minNumber = Math.min(...bunchOfNumbers); //Using the spread operator!
+
+          alert(minNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_24">Click Me!</button>
+        <hr>
+        <pre><code>
+          let bunchOfNumbers = [1, 20, 40, 100];
+
+          let minNumber = bunchOfNumbers.reduce(function(a, b){
+            return Math.min(a, b);
+          })
+
+          alert(minNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_25">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 9: Math.pow()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let base = 2;
+          let exponent = 3;
+
+          let result = Math.pow(2,3);
+
+          alert(result);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_26">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 10: Math.sqrt()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let num = 9;
+          let result = Math.sqrt(num);
+
+          alert(result);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_27">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 11: Math.round()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let numDown = 9.3991;
+          let numUp = 9.5013;
+
+          let resultDown = Math.round(numDown);
+          let resultUp = Math.round(numUp);
+
+          alert(resultDown);
+          alert(resultUp);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_28">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 12: Math.ceil()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let num_1 = 9.3991;
+          let num_2 = 9.5013;
+
+          let result_1 = Math.ceil(num_1);
+          let result_2 = Math.ceil(num_2);
+
+          alert(result_1);
+          alert(result_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_29">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 13: Math.floor()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let num_1 = 9.3991;
+          let num_2 = 9.5013;
+
+          let result_1 = Math.floor(num_1);
+          let result_2 = Math.floor(num_2);
+
+          alert(result_1);
+          alert(result_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_30">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 14: Math.trunc()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let num_1 = 9.3991;
+          let num_2 = 9.5013;
+
+          let result_1 = Math.trunc(num_1);
+          let result_2 = Math.trunc(num_2);
+
+          alert(result_1);
+          alert(result_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_31">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Numbers Example 15: Math.random()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let num = Math.random();
+          alert(num);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_32">Click Me!</button>
+        <hr>
+        <pre><code>
+          let num = Math.floor((Math.random() * 10) + 1);
+          alert(num);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_33">Click Me!</button>
+        <hr>
+        <pre><code>
+          let num = Math.floor((Math.random() * 100) + 1);
+          alert(num);
+        </code></pre>
+        <button type="button" class="answer_button" id="number_btn_34">Click Me!</button>
+      </section>
+
+
+<!-- To the top of the page button. -->
+      <button type="button" class="pageTop" title="Back to the top of the page.">Up</button>
+
+    </main>
+
+  </body>
+</html>

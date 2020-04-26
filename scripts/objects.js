@@ -1,10 +1,10 @@
 "use strict";
 
-// Events Example 1.
+// Object Example 1.
 
-document.querySelector("#event_btn_1").addEventListener("click", eventMethodEx1);
+document.querySelector("#object_btn_1").addEventListener("click", objectMethodEx1);
 
-function eventMethodEx1() {
+function objectMethodEx1() {
   let name = "Bobby";
   alert(name);
   alert(name[1]);

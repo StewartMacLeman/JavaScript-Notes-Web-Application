@@ -289,13 +289,16 @@ function arrayMethodEx25() {
 document.querySelector("#array_btn_26").addEventListener("click", arrayMethodEx26);
 
 function arrayMethodEx26() {
-  let fruitbowl = ["apples", "bananas", "mangoes", "grapes"];
+  let fruitbowl = ["apples", "bananas", "mangoes", "grapes", "lemons", "pears"];
 
-  let newFruitBowl = fruitbowl.map(wordLength);
+  let newFruitBowl = fruitbowl.map(altUpperCase);
 
-  function wordLength(fruitItem, indexNo) {
-    return alert("The word length at Index Number " + indexNo + " is "
-     + fruitItem.length + "!");
+  function altUpperCase(fruitItem, indexNo) {
+    if (indexNo%2 == 0){
+       return fruitItem.toUpperCase();
+    } else {
+      return fruitItem;
+    }
   }
   alert(newFruitBowl);
 };
@@ -315,16 +318,52 @@ function arrayMethodEx27() {
 document.querySelector("#array_btn_28").addEventListener("click", arrayMethodEx28);
 
 function arrayMethodEx28() {
-  let fruitbowl = ["apples", "bananas", "mangoes", "grapes"];
+  let fruitbowl = ["apples", "bananas", "mangoes", "grapes", "lemons", "pears"];
 
   let anotherFruitBowl = fruitbowl.filter(selectedFruit);
 
   function selectedFruit(fruitItem, indexNo) {
-    return alert("The fruit at Index Number " + indexNo + " is "
-    + (fruitItem.length < 7) + "!");
+    if ((indexNo + 1)%2 == 0 ){
+      return fruitItem;
+    }
+  }
+  alert(anotherFruitBowl);
+};
+// -----------------------------------------------------------------------------
+
+// Array Method Example 17: reduce()
+
+document.querySelector("#array_btn_29").addEventListener("click", arrayMethodEx29);
+
+function arrayMethodEx29() {
+  let scores = [25, 50, 75, 100, 125];
+
+  let combinedScores = scores.reduce(totalScores, 0);
+
+  function totalScores(total, score){
+    return total += score;
   }
 
-  // (fruit => fruit.length < 7);
-  // alert(anotherFruitBowl);
+  alert(combinedScores);
 };
+
+document.querySelector("#array_btn_30").addEventListener("click", arrayMethodEx30);
+
+function arrayMethodEx30() {
+  let turnovers = [1999, 1999, 2000, 2000, 2000];
+
+  let tax = turnovers.reduce(taxedSales, 0);
+
+  function taxedSales(totalTax, turnover){
+    if (turnover < 2000){
+      turnover = 0;
+    } else {
+      turnover * 0.1;
+    }
+    return totalTax += (turnover * 0.1);
+  }
+
+  alert(tax);
+};
+
 // -----------------------------------------------------------------------------

@@ -4,31 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stewart MacLeman">
-    <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision by the author.">
+    <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision.">
 
     <link rel="stylesheet" href="../css/home_page.css">
     <script src="../scripts/array_methods.js" defer></script>
     <script src="../scripts/toTheTop.js" defer></script>
-    <title>JavaScript Notes: Array Methods</title>
+    <title>JavaScript Notes: Arrays</title>
   </head>
 
   <body>
     <header>
-      <h1>JavaScript Notes: Array Methods</h1>
+      <h1>JavaScript Notes: Arrays</h1>
     </header>
     <nav>
       <ul>
         <li><a href="../index.html">Home Page</a></li>
         <li><a href="basics.html">The Basics</a></li>
-        <li><a href="string_methods.html">String Methods</a></li>
-        <li><a href="#">Array Methods</a></li>
+        <li><a href="string_methods.html">Strings</a></li>
+        <li><a href="numbers.html">Numbers</a></li>
+        <li><a href="#">Arrays</a></li>
+        <li><a href="objects.html">Objects</a></li>
+        <li><a href="dates.html">Dates</a></li>
         <li><a href="functions.html">Functions</a></li>
         <li><a href="events.html">Events</a></li>
       </ul>
     </nav>
 
     <main>
-      <p>This page is for the array methods..</p>
+      <p>This page is for the array methods...</p>
 
       <section class="content_container">
         <h2>Array Method Example 1: Return an Index Value</h2>
@@ -321,14 +324,18 @@
         <button type="button" class="answer_button" id="array_btn_25">Click Me!</button>
         <hr>
         <pre><code>
-          let fruitbowl = ["apples", "bananas", "mangoes", "grapes"];
+          let fruitbowl = ["apples", "bananas", "mangoes", "grapes", "lemons", "pears"];
 
-          let newFruitBowl = fruitbowl.map(wordLength);
+          let newFruitBowl = fruitbowl.map(altUpperCase);
 
-          function wordLength(fruitItem, indexNo) {
-            return alert("The word length at Index Number " + indexNo + " is "
-             + fruitItem.length + "!");
+          function altUpperCase(fruitItem, indexNo) {
+            if (indexNo%2 == 0){
+               return fruitItem.toUpperCase();
+            } else {
+              return fruitItem;
+            }
           }
+          alert(newFruitBowl);
         </code></pre>
         <button type="button" class="answer_button" id="array_btn_26">Click Me!</button>
       </section>
@@ -345,9 +352,53 @@
         <button type="button" class="answer_button" id="array_btn_27">Click Me!</button>
         <hr>
         <pre><code>
-          let
+          let fruitbowl = ["apples", "bananas", "mangoes", "grapes", "lemons", "pears"];
+
+          let anotherFruitBowl = fruitbowl.filter(selectedFruit);
+
+          function selectedFruit(fruitItem, indexNo) {
+            if ((indexNo + 1)%2 == 0 ){
+              return fruitItem;
+            }
+          }
+          alert(anotherFruitBowl);
         </code></pre>
         <button type="button" class="answer_button" id="array_btn_28">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Array Method Example 18: reduce()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let scores = [25, 50, 75, 100, 125];
+
+          let combinedScores = scores.reduce(totalScores);
+
+          function totalScores(total, score){
+            return total += score;
+          }
+
+          alert(combinedScores);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_29">Click Me!</button>
+        <hr>
+        <pre><code>
+          let turnovers = [1999, 1999, 2000, 2000, 2000];
+
+          let tax = turnovers.reduce(taxedSales, 0);
+
+          function taxedSales(totalTax, turnover){
+            if (turnover < 2000){
+              turnover = 0;
+            } else {
+              turnover * 0.1;
+            }
+            return totalTax += (turnover * 0.1);
+          }
+
+          alert(tax);
+        </code></pre>
+        <button type="button" class="answer_button" id="array_btn_30">Click Me!</button>
       </section>
 
 

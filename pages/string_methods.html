@@ -4,31 +4,34 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="author" content="Stewart MacLeman">
-    <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision by the author.">
+    <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision.">
 
     <link rel="stylesheet" href="../css/home_page.css">
     <script src="../scripts/string_methods.js" defer></script>
     <script src="../scripts/toTheTop.js" defer></script>
-    <title>JavaScript Notes: String Methods</title>
+    <title>JavaScript Notes: Strings</title>
   </head>
 
   <body>
     <header>
-      <h1>JavaScript Notes: String Methods</h1>
+      <h1>JavaScript Notes: Strings</h1>
     </header>
     <nav>
       <ul>
         <li><a href="../index.html">Home Page</a></li>
         <li><a href="basics.html">The Basics</a></li>
-        <li><a href="#">String Methods</a></li>
-        <li><a href="array_methods.html">Array Methods</a></li>
+        <li><a href="#">Strings</a></li>
+        <li><a href="numbers.html">Numbers</a></li>
+        <li><a href="array_methods.html">Arrays</a></li>
+        <li><a href="objects.html">Objects</a></li>
+        <li><a href="dates.html">Dates</a></li>
         <li><a href="functions.html">Functions</a></li>
         <li><a href="events.html">Events</a></li>
       </ul>
     </nav>
 
     <main>
-      <p>This page is for the string methods..</p>
+      <p>This page is for the string methods...</p>
 
       <section class="content_container">
         <h2>String Method Example 1</h2>
@@ -44,7 +47,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 2</h2>
+        <h2>String Method Example 2: length</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let name = "Bobby";
@@ -55,7 +58,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 3</h2>
+        <h2>String Method Example 3: indexOf()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "Bobby";
@@ -66,7 +69,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 4</h2>
+        <h2>String Method Example 4: indexOf()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "Bobby";
@@ -77,7 +80,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 5</h2>
+        <h2>String Method Example 5: slice()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "Bobby";
@@ -92,7 +95,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 6</h2>
+        <h2>String Method Example 6: slice()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "Bobby";
@@ -107,7 +110,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 7</h2>
+        <h2>String Method Example 7: slice()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "Billy Bob";
@@ -122,7 +125,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 8</h2>
+        <h2>String Method Example 8: toLowerCase()</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let name = "Bobby";
@@ -133,7 +136,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 9</h2>
+        <h2>String Method Example 9: toUpperCase()</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let name = "Bobby";
@@ -144,7 +147,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 10</h2>
+        <h2>String Method Example 10: slice() and toUpperCase()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "bobby";
@@ -157,7 +160,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 11</h2>
+        <h2>String Method Example 11: replace()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "bobby";
@@ -169,7 +172,7 @@
       </section>
 
       <section class="content_container">
-        <h2>String Method Example 12</h2>
+        <h2>String Method Example 12: replace()</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let name = "bobby";
@@ -180,6 +183,53 @@
           alert(name);
         </code></pre>
         <button type="button" class="answer_button" id="string_btn_12">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 13: concat()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let firstName = "Bob";
+          let secondName = "Jones";
+          let fullName = firstName.concat(secondName);
+          alert(fullName);
+
+          let space = " ";
+          fullName = firstName.concat(space).concat(secondName);
+          alert(fullName);
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_13">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 14: repeat()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let greeting = "Hello there! ";
+          alert(greeting.repeat(3));
+
+          let manyGreetings =
+          parseInt(prompt("Have many greetings would you like to make?", "1"));
+
+          alert(greeting.repeat(manyGreetings));
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_14">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>String Method Example 15: match()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let sentence = "There are lots and lots and lots of them!";
+
+          let containsLots1 = sentence.match(/lots/);
+          alert("Alert 1: " + Array.isArray(containsLots1));
+          alert("Alert 2: " + containsLots1);
+
+          let containsLots2 = sentence.match(/lots/g);
+          alert("Alert 3: " + containsLots2);
+        </code></pre>
+        <button type="button" class="answer_button" id="string_btn_15">Click Me!</button>
       </section>
 
 <!-- To the top of the page button. -->
