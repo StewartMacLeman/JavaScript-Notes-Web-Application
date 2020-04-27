@@ -34,17 +34,161 @@
       <p>This page is for date methods...</p>
 
       <section class="content_container">
-        <h2>Dates Example 1</h2>
-        <p>Check the code below and click the button to see the outcomes.</p>
+        <h2>Dates Example 1: Get the Current Date</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
-          let name = "Bobby";
-          alert(name);
-          alert(name[1]);
-          alert(name[name.length-1]);
-
-          This is a test!!!
+          let date = new Date();
+          alert(date);
         </code></pre>
         <button type="button" class="answer_button" id="date_btn_1">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 2: getFullYear()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let year = date.getFullYear();
+          alert(year);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_2">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 3: getMonth()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let date = new Date();
+          let month = date.getMonth();
+          alert(month);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_3">Click Me!</button>
+        <hr>
+        <pre><code>
+          let date = new Date();
+          let month = date.getMonth();
+          let monthsArray = ["January", "February", "March", "April",
+           "May", "June", "July", "August", "September", "October",
+            "November", "December"];
+
+          alert(monthsArray[month]);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 4: getDate()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let dayNumber = date.getDate();
+          alert(dayNumber);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 5: getDay()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let day = date.getDay();
+          alert(day);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_6">Click Me!</button>
+        <hr>
+        <pre><code>
+          let date = new Date();
+          let day = date.getDay();
+          let daysOftheWeek = ["Sunday", "Monday", "Tuesday", "Wednesday",
+          "Thursday", "Friday", "Saturday", "Sunday"];
+
+          alert(daysOftheWeek[day]);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_7">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 6: getTime()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let time = date.getTime();
+          alert(time);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_8">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 7: Date.now()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = Date.now();
+          alert(date);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_9">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 8: getHours()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let hour = date.getHours();
+          alert(hour);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_10">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 9: getMinutes()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let minutes = date.getMinutes();
+          alert(minutes);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_11">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 10: getSeconds()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let seconds = date.getSeconds();
+          alert(seconds);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_12">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 11: getMilliseconds()</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let date = new Date();
+          let milliSeconds = date.getMilliseconds();
+          alert(milliSeconds);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_13">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Dates Example 12: setFullYear()</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let date = new Date();
+          date.setFullYear(2019);
+          alert(date);
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_14">Click Me!</button>
+        <hr>
+        <pre><code>
+          let date = new Date();
+          date.setFullYear(2019, 9, 19);
+          alert(date)
+        </code></pre>
+        <button type="button" class="answer_button" id="date_btn_15">Click Me!</button>
       </section>
 
 
