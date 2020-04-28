@@ -34,17 +34,227 @@
       <p>This page is for objects...</p>
 
       <section class="content_container">
-        <h2>Object Example 1</h2>
+        <h2>Object Example 1: Accessing Property Values</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
-          let name = "Bobby";
-          alert(name);
-          alert(name[1]);
-          alert(name[name.length-1]);
+          let person = {
+            age : 50,
+            sex : "male",
+          };
 
-          This is a test!!!
+          alert(person.age);
+          alert(person["sex"]);
         </code></pre>
         <button type="button" class="answer_button" id="object_btn_1">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 2: Accessing Property Values</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let person = {
+            age : 50,
+            gender : "male",
+            address: {
+              house_number: 22,
+              street_name: "Main Street",
+              town: "Madeupville",
+              "post code": "ABC 123"
+            }
+          };
+
+          alert(person.address.house_number);
+          alert(person.address.street_name);
+          alert(person.address["post code"]);
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_2">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 3: Accessing Property Values</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let job = {
+            title: "Gardener",
+            clothes: ["Boots", "Gloves", "Hat", "Overalls" ],
+            tools: ["Spade", "Fork", "Rake", "Hoe"]
+          }
+
+          alert(job.clothes[0]);
+          alert(job.tools);
+          alert(job.tools[3]);
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_3">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 4: Adding Properties</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <pre><code>
+          let person = {
+            age : 50,
+            gender : "male",
+          };
+
+          person.nationality = "Scottish";
+          alert(person.nationality);
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_4">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 5: Deleting Properties</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let person = {
+            age : 50,
+            gender : "male",
+            nationality: "Scottish"
+          };
+          alert(person.nationality);
+
+          delete person.nationality;
+          alert(person.nationality);
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_5">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 6: The for in loop</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          let budget = {
+            groceries : 50,
+            utilities : 40,
+            fun : 60,
+            clothes : 70
+          };
+
+          for (let key in budget) {
+            alert("The budget for " + key + " is," +" £"+ budget[key] + ".");
+          }
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_6">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 7: Methods</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let employee = {
+            name : "Bobby",
+            age : 50,
+            job : "Gardener"
+          };
+
+          employee.speak = function(){
+            return alert(`My name is ${this.name} and I am a ${this.job}.`);
+          };
+
+          employee.speak();
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_7">Click Me!</button>
+        <hr>
+        <pre><code>
+          let employee = {
+            name : "Bobby",
+            age : 50,
+            job : "Gardener",
+            speak: function() {
+              return alert(`My name is ${this.name} and I am a ${this.job}.`);
+            }
+          };
+
+          employee.speak();
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_8">Click Me!</button>
+        <hr>
+        <pre><code>
+          let job = {
+            title: "Gardener",
+            clothes: ["Boots", "Gloves", "Hat", "Overalls" ],
+            tools: ["Spade", "Fork", "Rake", "Hoe"],
+
+            showClothes: function(){
+              for (let item = 0; item < this.clothes.length; item++){
+                alert("Item " + (item + 1) + ": "  + this.clothes[item] + ".")
+              }
+            },
+
+            showTools: function(){
+              for (let item = 0; item < this.tools.length; item++){
+                alert("Item " + (item + 1) + ": "  + this.tools[item] + ".");
+              }
+            }
+          }
+          job.showClothes();
+          job.showTools();
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_9">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 8: Getters and Setters</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          let employee = {
+            name : "Bobby",
+            age : 50,
+            job : "Gardener",
+
+            get speak(){
+              return alert(`My name is ${this.name}, and I'm a ${this.job}.`)
+            }
+          };
+
+          employee.speak;
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_10">Click Me!</button>
+        <hr>
+        <pre><code>
+          let employee = {
+            name : "Bobby",
+            age : 50,
+            job : "Gardener",
+
+            set jobTitle(title){
+              this.job = title;
+            }
+          };
+
+          alert(employee.job);
+
+          employee.jobTitle = "Plumber";
+          alert(employee.job);
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_11">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Object Example 9: Constructors</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          function Employee(firstName, secondName, age, title){
+            this.firstN = firstName;
+            this.secondN = secondName;
+            this.age = age;
+            this.title = title;
+            this.fullName = function(){
+              return `${this.firstN} ${this.secondN}`
+            };
+          }
+
+          let newEmployee_1 = new Employee("Bobby", "Jones", 35, "Assistant Manager");
+
+          alert(newEmployee_1.fullName());
+          alert(newEmployee_1.age);
+
+          let newEmployee_2 = new Employee("Billy", "Jean", 33, "Manager");
+
+          alert(newEmployee_2.fullName());
+          alert(newEmployee_1.title);
+        </code></pre>
+        <button type="button" class="answer_button" id="object_btn_12">Click Me!</button>
       </section>
 
 
