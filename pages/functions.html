@@ -34,12 +34,12 @@
       <p>This page is for the functions...</p>
 
       <section class="content_container">
-        <h2>Function Example 1</h2>
+        <h2>Function Example 1: Function Declaration</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           function greeting(name, age){
 
-            alert("Hello, my name is " + name + ". I'm " + age + " years old!");
+            return alert("Hello, my name is " + name + ". I'm " + age + " years old!");
           };
 
           greeting("Tommy", "30");
@@ -48,12 +48,12 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 2</h2>
+        <h2>Function Example 2: Variable Scope</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           function localVariable(){
             let name = "PJ";
-            alert("My name is " + name + "!");
+            return alert("My name is " + name + "!");
           };
 
           localVariable();
@@ -63,14 +63,14 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 3</h2>
+        <h2>Function Example 3: Variable Scope</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let outerName = "MJ";
 
           function outerNameTest(){
             let outerName = "MMJJ";
-            alert("My name is " + outerName);
+            return alert("My name is " + outerName);
           };
 
           outerNameTest();
@@ -80,13 +80,13 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 4</h2>
+        <h2>Function Example 4: Parameters and Arguments</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let parameterName = "JimBob";
 
           function parameterNameTest( parameterName, age = 100 ){
-            alert("I'm " + parameterName + ", I'm " + age + "!");
+            return alert("I'm " + parameterName + ", I'm " + age + "!");
           };
 
           parameterNameTest(parameterName, 20);
@@ -97,7 +97,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 5</h2>
+        <h2>Function Example 5: Parameters and Arguments</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let dow, ray, mee;
@@ -117,18 +117,18 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 6</h2>
+        <h2>Function Example 6: Parameters and Arguments</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           function compareValue(a , b){
             if (a > b){
-              alert("a is greater than b!");
+              return alert("a is greater than b!");
             }
             else if (a < b){
-              alert("b is greater than a");
+              return alert("b is greater than a");
             }
             else if (a == b){
-              alert("The values are the same!");
+              return alert("The values are the same!");
             }
           };
 
@@ -140,7 +140,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 7</h2>
+        <h2>Function Example 7: Parameters and Arguments</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           function calcThePower(baseNumber, exponentNumber){
@@ -159,12 +159,13 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 8</h2>
+        <h2>Function Example 8: Function Expression (Anonymous)</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let funcExpression = function(){
-            alert("Hello world!");
+            return alert("Hello world!");
           }
+
           alert(funcExpression);
           funcExpression();
         </code></pre>
@@ -172,7 +173,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 9</h2>
+        <h2>Function Example 9: Arrow Function</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let sum = (a,b) => a + b;
@@ -182,7 +183,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 10</h2>
+        <h2>Function Example 10: Arrow Function</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let greetings = () => {
@@ -195,7 +196,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Function Example 11</h2>
+        <h2>Function Example 11: Arrow Function</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let moreGreetings = (name) => {
@@ -207,6 +208,128 @@
          moreGreetings("Bobby");
         </code></pre>
         <button type="button" class="answer_button" id="function_btn_11">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 12: call()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          function speakName() {
+              return alert(`My name is ${this.name} and I am a ${this.job}.`);
+            }
+
+            let employee_1 = {
+              name : "Bobby",
+              age : 50,
+              job : "Gardener"
+            };
+
+            let employee_2 = {
+              name : "Dave",
+              age : 40,
+              job : "Driver"
+            };
+
+            speakName.call(employee_1);
+            speakName.call(employee_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_12">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 13: call() with Arguments</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          function speakName(age) {
+              return alert(`My name is ${this.name} and I am a ${this.job}. I'm ${age}!`);
+            }
+
+            let employee_1 = {
+              name : "Bobby",
+              job : "Gardener"
+            };
+
+            let employee_2 = {
+              name : "Dave",
+              job : "Driver"
+            };
+
+            speakName.call(employee_1, 50);
+            speakName.call(employee_2, 40);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_13">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 14: apply()</h2>
+        <p>Check the code below and click the button to see the outcomes.</p>
+        <pre><code>
+          function speakName() {
+              return alert(`My name is ${this.name} and I am a ${this.job}.`);
+            }
+
+            let employee_1 = {
+              name : "Bobby",
+              job : "Gardener"
+            };
+
+            let employee_2 = {
+              name : "Dave",
+              job : "Driver"
+            };
+
+            speakName.apply(employee_1);
+            speakName.apply(employee_2);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_14">Click Me!</button>
+      </section>
+
+      <section class="content_container">
+        <h2>Function Example 15: apply() with Arguments</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <pre><code>
+          function speakName(age, nationality) {
+              return alert(`My name is ${this.name} and I am a ${this.job}.
+              I'm ${age} and I'm ${nationality}.`);
+            }
+
+            let employee_1 = {
+              name : "Bobby",
+              job : "Gardener"
+            };
+
+            let employee_2 = {
+              name : "Dave",
+              job : "Driver"
+            };
+
+            speakName.apply(employee_1, [50, "Scottish"]);
+            speakName.apply(employee_2, [40, "Australian"]);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_15">Click Me!</button>
+        <hr>
+        <pre><code>
+          function speakName(age, nationality) {
+              return alert(`My name is ${this.name} and I am a ${this.job}.
+              I'm ${age} and I'm ${nationality}.`);
+            }
+
+            let employee_1 = {
+              name : "Bobby",
+              job : "Gardener",
+              extra: [50, "Scottish"]
+            };
+
+            let employee_2 = {
+              name : "Dave",
+              job : "Driver"
+            };
+            let empl2Extra = [40, "Australian"];
+
+            speakName.apply(employee_1, employee_1.extra);
+            speakName.apply(employee_2, empl2Extra);
+        </code></pre>
+        <button type="button" class="answer_button" id="function_btn_16">Click Me!</button>
       </section>
 
 <!-- To the top of the page button. -->
