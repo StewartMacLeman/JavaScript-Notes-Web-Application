@@ -34,17 +34,202 @@
       <p>This page is for the events...</p>
 
       <section class="content_container">
-        <h2>Events Example 1</h2>
+        <h2>Events Example 1: Adding Text to an Element</h2>
         <p>Check the code below and click the button to see the outcome.</p>
+        <h2>JavaScript Code</h2>
         <pre><code>
-          let name = "Bobby";
-          alert(name);
-          alert(name[1]);
-          alert(name[name.length-1]);
+        document.querySelector("#event_btn_1").addEventListener("click", eventMethodEx1);
 
-          This is a test!!!
+          function eventMethodEx1() {
+            let para = document.querySelector("#event_result_1");
+
+            if (para.innerHTML == ""){
+              para.innerHTML = "You have added text! Click the button again to remove.";
+            } else {
+              para.innerHTML = "";
+            }
+          };
+        </code></pre>
+        <h2>HTML Code</h2>
+        <pre><code>
+          &lt;button type="button" class="answer_button" id="event_btn_1"&gt;Click Me!&lt;/button&gt;
+          &lt;p class="eventAnswer" id="event_result_1"&gt;&lt;/p&gt;
         </code></pre>
         <button type="button" class="answer_button" id="event_btn_1">Click Me!</button>
+        <p class="eventAnswer" id="event_result_1"></p>
+      </section>
+
+      <section class="content_container">
+        <h2>Events Example 2: Changing Content Styles</h2>
+        <p>Check the code below and click the button to see the outcome.</p>
+        <h2>JavaScript Code</h2>
+        <pre><code>
+        document.querySelector("#event_btn_2").addEventListener("click", eventMethodEx2);
+
+          function eventMethodEx2() {
+            let para = document.querySelector("#event_result_2");
+
+            if (para.style.color == "red"){
+              para.style.color = "black";
+            } else {
+              para.style.color = "red";
+            }
+          };
+        </code></pre>
+        <h2>HTML Code</h2>
+        <pre><code>
+          &lt;button type="button" class="answer_button" id="event_btn_2"&gt;Click Me!&lt;/button&gt;
+          &lt;p class="eventAnswer" id="event_result_2"&gt;&lt;/p&gt;
+        </code></pre>
+        <button type="button" class="answer_button" id="event_btn_2">Click Me!</button>
+        <p class="eventAnswer" id="event_result_2">Click the button to change the style!</p>
+      </section>
+
+      <section class="content_container">
+        <h2>Events Example 3: Adding and Removing Elements</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <h2>JavaScript Code</h2>
+        <pre><code>
+        document.querySelector("#event_btn_3").addEventListener("click", eventMethodEx3);
+
+          function eventMethodEx3() {
+            let newPara = document.createElement("p");
+            let newParaText = document.createTextNode("This is another one!")
+            newPara.appendChild(newParaText);
+            newPara.setAttribute("class", "eventAnswer");
+            document.querySelector("#event_result_3").appendChild(newPara);
+          };
+
+        document.querySelector("#event_btn_4").addEventListener("click", eventMethodEx4);
+
+          function eventMethodEx4() {
+            let container = document.querySelector("#event_result_3");
+            let listOfPara = container.querySelectorAll("p");
+
+            if (listOfPara.length > 1){
+              listOfPara[listOfPara.length-1].remove();
+            }
+          };
+        </code></pre>
+        <h2>HTML Code</h2>
+        <pre><code>
+        &lt;button type="button" class="answer_button" id="event_btn_3"&gt;Add One!&lt;/button&gt;
+        &lt;br&gt;
+        &lt;button type="button" class="answer_button" id="event_btn_4"&gt;Remove One!&lt;/button&gt;
+        &lt;div id="event_result_3"&gt;
+          &lt;p class="eventAnswer"&gt;Click the button to add another!&lt;/p&gt;
+        &lt;/div&gt;
+        </code></pre>
+        <button type="button" class="answer_button" id="event_btn_3">Add One!</button><br>
+        <button type="button" class="answer_button" id="event_btn_4">Remove One!</button>
+        <div id="event_result_3">
+          <p class="eventAnswer">Click the button to add another!</p>
+        </div>
+      </section>
+
+      <section class="content_container">
+        <h2>Events Example 4: Updating Multiple Elements</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <h2>JavaScript Code</h2>
+        <pre><code>
+        document.querySelector("#event_btn_5").addEventListener("click", eventMethodEx5);
+
+          function eventMethodEx5() {
+            let container = document.querySelector("#event_result_4");
+            let listOfElements = container.querySelectorAll("p");
+
+            //Changing the "p" to "*" will also change the span tag.
+
+            if ((listOfElements[0].style.color == "tomato") &&
+            (listOfElements[0].style.fontWeight == "bold")){
+
+              for (let element = 0; element < listOfElements.length; element++){
+                listOfElements[element].style.color = "black";
+                listOfElements[element].style.fontWeight = "normal";
+              }
+            } else {
+              for (let element = 0; element < listOfElements.length; element++){
+                listOfElements[element].style.color = "tomato";
+                listOfElements[element].style.fontWeight = "bold";
+              }
+            }
+          };
+        </code></pre>
+        <h2>HTML Code</h2>
+        <pre><code>
+          &lt;button type="button" class="answer_button" id="event_btn_5"&gt;Click Me!&lt;/button&gt;
+          &lt;div id="event_result_4"&gt;
+            &lt;p class="eventAnswer"&gt;This is a paragraph!&lt;/p&gt;
+            &lt;p class="eventAnswer"&gt;This is a paragraph!&lt;/p&gt;
+            &lt;span class="eventAnswer"&gt;This is a span!&lt;/span&gt;
+            &lt;p class="eventAnswer"&gt;This is a paragraph!&lt;/p&gt;
+            &lt;p class="eventAnswer"&gt;This is a paragraph!&lt;/p&gt;
+          &lt;/div&gt;
+        </code></pre>
+        <button type="button" class="answer_button" id="event_btn_5">Click Me!</button>
+        <div id="event_result_4">
+          <p class="eventAnswer">This is a paragraph!</p>
+          <p class="eventAnswer">This is a paragraph!</p>
+          <span class="eventAnswer">This is a span!</span>
+          <p class="eventAnswer">This is a paragraph!</p>
+          <p class="eventAnswer">This is a paragraph!</p>
+        </div>
+      </section>
+
+      <section class="content_container">
+        <h2>Events Example 5: Moving Elements</h2>
+        <p>Check the code below and click the buttons to see the outcomes.</p>
+        <h2>JavaScript Code</h2>
+        <pre><code>
+        document.querySelector("#event_btn_6").addEventListener("click", eventMethodEx6);
+
+          function eventMethodEx6() {
+
+            let inner = document.querySelector("#innerBox");
+            let topPosition = 0;
+            let leftPosition = 0;
+            let moveStep = setInterval(move, 5);
+
+            function move(){
+              if ((topPosition == 350) && (leftPosition == 700) ){
+                clearInterval(moveStep);
+              } else {
+                topPosition++;
+                leftPosition = leftPosition + 2;
+                inner.style.top = topPosition + "px";
+                inner.style.left = leftPosition + "px";
+              }
+            }
+          };
+        </code></pre>
+        <h2>CSS Code</h2>
+        <pre><code>
+          #outerBox {
+            margin: 10px auto;
+            position: relative;
+            width: 400px;
+            height: 400px;
+            background-color: powderblue;
+            border: 2px solid black;
+          }
+          #innerBox {
+            position: absolute;
+            width: 50px;
+            height: 50px;
+            background-color: blue;
+          }
+        </code></pre>
+        <h2>HTML Code</h2>
+        <pre><code>
+          &lt;button type="button" class="answer_button" id="event_btn_6"&gt;Click Me!&lt;/button&gt;
+          &lt;div id="outerBox"&gt;
+            &lt;div id="innerBox"&gt;&lt;/div&gt;
+          &lt;/div&gt;
+        </code></pre>
+        <button type="button" class="answer_button" id="event_btn_6">Click Me!</button>
+        <div id="outerBox">
+          <div id="innerBox"></div>
+        </div>
       </section>
 
 

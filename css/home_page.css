@@ -30,6 +30,13 @@ section p {
   padding: 2px;
   text-align: left;
 }
+.eventAnswer {
+  font-size: 2em;
+  color: black;
+  margin: 0 auto;
+  padding: 4px;
+  text-align: center;
+}
 section pre {
   margin: 0px;
   padding: 0px;
@@ -84,7 +91,6 @@ li a:hover {
 /* Code examples container----------------------------------------- */
 
 .content_container {
-  /* font-size: 1.5em; */
   width: 85%;
   margin: 0 auto 10px;
   border-radius: 5px;
@@ -112,6 +118,24 @@ li a:hover {
   color: linen;
   cursor: pointer;
 }
+
+span {display: block;}
+
+#outerBox {
+  margin: 10px auto;
+  position: relative;
+  width: 800px;
+  height: 400px;
+  background-color: powderblue;
+  border: 2px solid black;
+}
+#innerBox {
+  position: absolute;
+  width: 100px;
+  height: 50px;
+  background-color: blue;
+}
+
 
 /* Go to the top of the page button.------------------------------------------ */
 .pageTop {
