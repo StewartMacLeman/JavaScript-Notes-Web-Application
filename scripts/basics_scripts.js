@@ -98,6 +98,7 @@ document.querySelector("#basic_btn_10").addEventListener("click", numberOpEx4);
 function numberOpEx4() {
   let number_1 = 1;
   let number_2 = ++number_1;
+  alert(number_1);
   alert(number_2);
 };
 

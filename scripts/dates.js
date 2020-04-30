@@ -322,7 +322,7 @@ function dateMethodEx33() {
 };
 // -----------------------------------------------------------------------------
 
-// Dates Example 17: setMilliseconds()
+// Dates Example 18: setMilliseconds()
 
 document.querySelector("#date_btn_34").addEventListener("click", dateMethodEx34);
 
@@ -349,7 +349,7 @@ function dateMethodEx36() {
 };
 // -----------------------------------------------------------------------------
 
-// Dates Example 18: setTime()
+// Dates Example 19: setTime()
 
 document.querySelector("#date_btn_37").addEventListener("click", dateMethodEx37);
 

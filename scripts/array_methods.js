@@ -229,7 +229,7 @@ function arrayMethodEx20() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 14: Iterations
+// Array Method Example 14: The for loop
 
 document.querySelector("#array_btn_21").addEventListener("click", arrayMethodEx21);
 

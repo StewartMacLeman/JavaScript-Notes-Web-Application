@@ -219,6 +219,6 @@ function objectMethodEx12() {
   let newEmployee_2 = new Employee("Billy", "Jean", 33, "Manager");
 
   alert("Alert 3: " + newEmployee_2.fullName());
-  alert("Alert 4: " + newEmployee_1.title);
+  alert("Alert 4: " + newEmployee_2.title);
 };
 // -----------------------------------------------------------------------------

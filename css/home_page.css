@@ -4,6 +4,7 @@ body {
   margin: 0 auto;
   font-family: Verdana, Helvetica, sans-serif;
 }
+hr {border-color: powderblue;}
 /* Fonts---------------------------------------------------- */
 h1 {
   font-size: 4em;
@@ -46,7 +47,6 @@ code { font-size: 1.5em; }
 /* --------------------------------------------------------------- */
 
 header {
-  /* border: 2px solid white; */
   margin: 0 auto;
 }
 /* The navigation bar--------------------------------------------- */
