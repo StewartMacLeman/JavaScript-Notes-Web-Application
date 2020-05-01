@@ -3,6 +3,7 @@ body {
   background-color: powderblue;
   margin: 0 auto;
   font-family: Verdana, Helvetica, sans-serif;
+  color: black;
 }
 hr {border-color: powderblue;}
 /* Fonts---------------------------------------------------- */
@@ -17,6 +18,7 @@ p {
   font-size: 2em;
   color: blue;
   text-align: center;
+  margin: 20px auto;
 }
 section h2 {
   font-size: 1.5em;
@@ -78,15 +80,50 @@ li a:hover {
   color: linen;
   cursor: pointer;
 }
-/* ---------------------------------------------------------------- */
+/* Home Page ------------------------------------------------------- */
 
 #home_page_image_container {
   font-size: 1.5em;
   width: 60vw;
-  height: 55vh;
+  height: 60vh;
   margin: 0 auto;
   background-color: linen;
   border: 2px solid white;
+  overflow-x: scroll;
+}
+
+#home_page_image_container h2 {
+  font-size: 1.5em;
+  text-decoration: underline;
+  margin: 5px 0px 25px 0px;
+  padding: 2px;
+  text-align: center;
+}
+
+#home_page_image_container h3 {
+  font-size: 1.25em;
+  margin: 10px auto;
+  padding: 2px;
+  text-align: left;
+}
+
+#home_page_image_container:hover {
+  border: 2px solid black;
+  cursor: pointer;
+}
+
+.imageHomePage{
+  position: relative;
+  width: 60%;
+  height: 60%;
+  margin: 10px auto;
+  border: 2px solid black;
+}
+
+img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
 }
 /* Code examples container----------------------------------------- */
 
