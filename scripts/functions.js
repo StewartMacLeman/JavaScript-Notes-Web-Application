@@ -1,6 +1,6 @@
 "use strict";
 
-// Function Example 1: Function Declaration
+// Functions Example 1: Function Declaration
 
 document.querySelector("#function_btn_1").addEventListener("click", functionEx1);
 
@@ -12,7 +12,7 @@ function functionEx1() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 2: Variable Scope
+// Functions Example 2: Variable Scope
 
 document.querySelector("#function_btn_2").addEventListener("click", functionEx2);
 
@@ -26,7 +26,7 @@ function functionEx2() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 3: Variable Scope
+// Functions Example 3: Variable Scope
 
 document.querySelector("#function_btn_3").addEventListener("click", functionEx3);
 
@@ -41,7 +41,7 @@ function functionEx3() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 4: Parameters and Arguments
+// Functions Example 4: Parameters and Arguments
 
 document.querySelector("#function_btn_4").addEventListener("click", functionEx4);
 
@@ -58,7 +58,7 @@ function functionEx4() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 5: Parameters and Arguments
+// Functions Example 5: Parameters and Arguments
 
 document.querySelector("#function_btn_5").addEventListener("click", functionEx5);
 
@@ -77,7 +77,7 @@ function functionEx5() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 6: Parameters and Arguments
+// Functions Example 6: Parameters and Arguments
 
 document.querySelector("#function_btn_6").addEventListener("click", functionEx6);
 
@@ -100,7 +100,7 @@ function functionEx6() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 7: Parameters and Arguments
+// Functions Example 7: Parameters and Arguments
 
 document.querySelector("#function_btn_7").addEventListener("click", functionEx7);
 
@@ -118,7 +118,7 @@ function functionEx7() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 8: Function Expression (Anonymous)
+// Functions Example 8: Function Expression (Anonymous)
 
 document.querySelector("#function_btn_8").addEventListener("click", functionEx8);
 
@@ -132,7 +132,7 @@ function functionEx8() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 9: Arrow Function
+// Functions Example 9: Arrow Function
 
 document.querySelector("#function_btn_9").addEventListener("click", functionEx9);
 
@@ -142,7 +142,7 @@ function functionEx9() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 10: Arrow Function
+// Functions Example 10: Arrow Function
 
 document.querySelector("#function_btn_10").addEventListener("click", functionEx10);
 
@@ -155,7 +155,7 @@ function functionEx10() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 11: Arrow Function
+// Functions Example 11: Arrow Function
 
 document.querySelector("#function_btn_11").addEventListener("click", functionEx11);
 
@@ -170,7 +170,7 @@ function functionEx11() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 12: call()
+// Functions Example 12: call()
 
 document.querySelector("#function_btn_12").addEventListener("click", functionEx12);
 
@@ -197,7 +197,7 @@ function speakName() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 13: call() with Arguments
+// Functions Example 13: call() with Arguments
 
 document.querySelector("#function_btn_13").addEventListener("click", functionEx13);
 
@@ -222,7 +222,7 @@ function speakName(age) {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 14: apply()
+// Functions Example 14: apply()
 
 document.querySelector("#function_btn_14").addEventListener("click", functionEx14);
 
@@ -247,7 +247,7 @@ function speakName() {
 };
 // -----------------------------------------------------------------------------
 
-// Function Example 15: apply() with Arguments
+// Functions Example 15: apply() with Arguments
 
 document.querySelector("#function_btn_15").addEventListener("click", functionEx15);
 

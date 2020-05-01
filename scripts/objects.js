@@ -1,6 +1,6 @@
 "use strict";
 
-// Object Example 1: Accessing Property Values
+// Objects Example 1: Accessing Property Values
 
 document.querySelector("#object_btn_1").addEventListener("click", objectMethodEx1);
 
@@ -15,7 +15,7 @@ function objectMethodEx1() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 2: Accessing Property Values
+// Objects Example 2: Accessing Property Values
 
 document.querySelector("#object_btn_2").addEventListener("click", objectMethodEx2);
 
@@ -37,7 +37,7 @@ function objectMethodEx2() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 3: Accessing Property Values
+// Objects Example 3: Accessing Property Values
 
 document.querySelector("#object_btn_3").addEventListener("click", objectMethodEx3);
 
@@ -54,7 +54,7 @@ function objectMethodEx3() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 4: Adding Properties
+// Objects Example 4: Adding Properties
 
 document.querySelector("#object_btn_4").addEventListener("click", objectMethodEx4);
 
@@ -69,7 +69,7 @@ function objectMethodEx4() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 5: Deleting Properties
+// Objects Example 5: Deleting Properties
 
 document.querySelector("#object_btn_5").addEventListener("click", objectMethodEx5);
 
@@ -86,7 +86,7 @@ function objectMethodEx5() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 6: The for in loop
+// Objects Example 6: The for in loop
 
 document.querySelector("#object_btn_6").addEventListener("click", objectMethodEx6);
 
@@ -104,7 +104,7 @@ function objectMethodEx6() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 7: Methods
+// Objects Example 7: Methods
 
 document.querySelector("#object_btn_7").addEventListener("click", objectMethodEx7);
 
@@ -160,7 +160,7 @@ function objectMethodEx9() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 8: Getters and Setters
+// Objects Example 8: Getters and Setters
 
 document.querySelector("#object_btn_10").addEventListener("click", objectMethodEx10);
 
@@ -196,7 +196,7 @@ function objectMethodEx11() {
 };
 // -----------------------------------------------------------------------------
 
-// Object Example 9: Constructors
+// Objects Example 9: Constructors
 
 document.querySelector("#object_btn_12").addEventListener("click", objectMethodEx12);
 

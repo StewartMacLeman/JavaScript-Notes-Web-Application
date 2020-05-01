@@ -1,6 +1,6 @@
 "use strict";
 
-// Array Method Example 1: Return an Index Value.
+// Arrays Example 1: Return an Index Value.
 
 document.querySelector("#array_btn_1").addEventListener("click", arrayMethodEx1);
 
@@ -12,7 +12,7 @@ function arrayMethodEx1() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 2: Update an Index Value
+// Arrays Example 2: Update an Index Value
 
 document.querySelector("#array_btn_2").addEventListener("click", arrayMethodEx2);
 
@@ -24,7 +24,7 @@ function arrayMethodEx2() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 3: A Multidimensional Array
+// Arrays Example 3: A Multidimensional Array
 
 document.querySelector("#array_btn_3").addEventListener("click", arrayMethodEx3);
 
@@ -36,7 +36,7 @@ function arrayMethodEx3() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 4: push()
+// Arrays Example 4: push()
 
 document.querySelector("#array_btn_4").addEventListener("click", arrayMethodEx4);
 
@@ -48,7 +48,7 @@ function arrayMethodEx4() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 5: pop()
+// Arrays Example 5: pop()
 
 document.querySelector("#array_btn_5").addEventListener("click", arrayMethodEx5);
 
@@ -60,7 +60,7 @@ function arrayMethodEx5() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 6: unshift()
+// Arrays Example 6: unshift()
 
 document.querySelector("#array_btn_6").addEventListener("click", arrayMethodEx6);
 
@@ -72,7 +72,7 @@ function arrayMethodEx6() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 7: shift()
+// Arrays Example 7: shift()
 
 document.querySelector("#array_btn_7").addEventListener("click", arrayMethodEx7);
 
@@ -84,7 +84,7 @@ function arrayMethodEx7() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 8: toString() and join()
+// Arrays Example 8: toString() and join()
 
 document.querySelector("#array_btn_8").addEventListener("click", arrayMethodEx8);
 
@@ -100,7 +100,7 @@ function arrayMethodEx8() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 9: split()
+// Arrays Example 9: split()
 
 document.querySelector("#array_btn_9").addEventListener("click", arrayMethodEx9);
 
@@ -118,7 +118,7 @@ function arrayMethodEx9() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 10: reverse()
+// Arrays Example 10: reverse()
 
 document.querySelector("#array_btn_10").addEventListener("click", arrayMethodEx10);
 
@@ -130,7 +130,7 @@ function arrayMethodEx10() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 11: slice()
+// Arrays Example 11: slice()
 
 document.querySelector("#array_btn_11").addEventListener("click", arrayMethodEx11);
 
@@ -142,7 +142,7 @@ function arrayMethodEx11() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 12: splice()
+// Arrays Example 12: splice()
 
 document.querySelector("#array_btn_12").addEventListener("click", arrayMethodEx12);
 
@@ -172,7 +172,7 @@ function arrayMethodEx14() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 13: sort()
+// Arrays Example 13: sort()
 
 document.querySelector("#array_btn_15").addEventListener("click", arrayMethodEx15);
 
@@ -229,7 +229,7 @@ function arrayMethodEx20() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 14: The for loop
+// Arrays Example 14: The for loop
 
 document.querySelector("#array_btn_21").addEventListener("click", arrayMethodEx21);
 
@@ -252,7 +252,7 @@ function arrayMethodEx22() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 15: forEach()
+// Arrays Example 15: forEach()
 
 document.querySelector("#array_btn_23").addEventListener("click", arrayMethodEx23);
 
@@ -275,7 +275,7 @@ function arrayMethodEx24() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 16: map()
+// Arrays Example 16: map()
 
 document.querySelector("#array_btn_25").addEventListener("click", arrayMethodEx25);
 
@@ -304,7 +304,7 @@ function arrayMethodEx26() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 17: filter()
+// Arrays Example 17: filter()
 
 document.querySelector("#array_btn_27").addEventListener("click", arrayMethodEx27);
 
@@ -331,7 +331,7 @@ function arrayMethodEx28() {
 };
 // -----------------------------------------------------------------------------
 
-// Array Method Example 17: reduce()
+// Arrays Example 17: reduce()
 
 document.querySelector("#array_btn_29").addEventListener("click", arrayMethodEx29);
 

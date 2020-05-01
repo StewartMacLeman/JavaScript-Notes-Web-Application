@@ -6,7 +6,7 @@
     <meta name="author" content="Stewart MacLeman">
     <meta name="description" content="This website contains examples of basic JavaScript concepts. It is for the purpose of revision.">
 
-    <link rel="stylesheet" href="../css/home_page.css">
+    <link rel="stylesheet" href="../css/styles.css">
     <script src="../scripts/objects.js" defer></script>
     <script src="../scripts/toTheTop.js" defer></script>
     <title>JavaScript Notes: Objects</title>
@@ -20,9 +20,9 @@
       <ul>
         <li><a href="../index.html">Home Page</a></li>
         <li><a href="basics.html">The Basics</a></li>
-        <li><a href="string_methods.html">Strings</a></li>
+        <li><a href="strings.html">Strings</a></li>
         <li><a href="numbers.html">Numbers</a></li>
-        <li><a href="array_methods.html">Arrays</a></li>
+        <li><a href="arrays.html">Arrays</a></li>
         <li><a href="#">Objects</a></li>
         <li><a href="dates.html">Dates</a></li>
         <li><a href="functions.html">Functions</a></li>
@@ -31,25 +31,26 @@
     </nav>
 
     <main>
-      <p>This page is for objects...</p>
+      <p>The examples below relate to various Object topics.</p>
+      <p>Review the code per section, then click the buttons to see the outcomes.</p>
 
       <section class="content_container">
-        <h2>Object Example 1: Accessing Property Values</h2>
+        <h2>Objects Example 1: Accessing Property Values</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let person = {
             age : 50,
-            sex : "male",
+            gender : "male",
           };
 
           alert(person.age);
-          alert(person["sex"]);
+          alert(person["gender"]);
         </code></pre>
         <button type="button" class="answer_button" id="object_btn_1">Click Me!</button>
       </section>
 
       <section class="content_container">
-        <h2>Object Example 2: Accessing Property Values</h2>
+        <h2>Objects Example 2: Accessing Property Values</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let person = {
@@ -71,7 +72,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 3: Accessing Property Values</h2>
+        <h2>Objects Example 3: Accessing Property Values</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let job = {
@@ -88,7 +89,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 4: Adding Properties</h2>
+        <h2>Objects Example 4: Adding Properties</h2>
         <p>Check the code below and click the button to see the outcome.</p>
         <pre><code>
           let person = {
@@ -103,7 +104,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 5: Deleting Properties</h2>
+        <h2>Objects Example 5: Deleting Properties</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let person = {
@@ -120,7 +121,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 6: The for in loop</h2>
+        <h2>Objects Example 6: The for in loop</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           let budget = {
@@ -138,7 +139,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 7: Methods</h2>
+        <h2>Objects Example 7: Methods</h2>
         <p>Check the code below and click the buttons to see the outcomes.</p>
         <pre><code>
           let employee = {
@@ -194,7 +195,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 8: Getters and Setters</h2>
+        <h2>Objects Example 8: Getters and Setters</h2>
         <p>Check the code below and click the buttons to see the outcomes.</p>
         <pre><code>
           let employee = {
@@ -231,7 +232,7 @@
       </section>
 
       <section class="content_container">
-        <h2>Object Example 9: Constructors</h2>
+        <h2>Objects Example 9: Constructors</h2>
         <p>Check the code below and click the button to see the outcomes.</p>
         <pre><code>
           function Employee(firstName, secondName, age, title){
